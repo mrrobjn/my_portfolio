@@ -11,7 +11,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: '#0284C7',
+        paragraph: '#6B7280',
+        big_title: '#334155',
       },
+      backgroundColor: {
+        primary: '#0284C7',
+      }
     },
   },
   plugins: [],
