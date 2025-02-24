@@ -18,7 +18,7 @@ export const NavBar = () => {
     return (
         <nav className="fixed bg-white w-full z-50">
             <div className="flex justify-between items-center h-[72px] max-w-7xl m-auto px-5">
-                <a className="font-bold" href="/">My Portfolio</a>
+                <Link className="font-bold" href="/">My Portfolio</Link>
                 <div>
                     {navItemArr.map((item, i) => {
                         return <NavItem link={item.link} name={item.name} key={i}/>
