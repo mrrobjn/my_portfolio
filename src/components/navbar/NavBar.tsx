@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const navItemArr = [
     {name: 'About', link: '#about'},
     {name: 'Experience', link: '#experience'},
@@ -8,7 +10,7 @@ const navItemArr = [
 
 export const NavItem: React.FC<NavItemProp> = (item) => {
   return (
-    <a className="uppercase mx-5" href={item.link}>{item.name}</a>
+    <Link className="uppercase mx-5" href={item.link}>{item.name}</Link>
   )
 }
 

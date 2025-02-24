@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const socialLinks = [
     {
         icon: 'linkedin.svg',
@@ -19,14 +21,14 @@ const socialLinks = [
 
 const IconLink: React.FC<IconLinkProp> = ({ icon, link }) => {
     return (
-      <a href={link}><img className="h-[33px]" src={icon}/></a>
+      <Link href={link}><img className="h-[33px]" src={icon}/></Link>
     )
 }
 
 export const About = () => {
     return (
         <section id="about" className="h-screen flex flex-col">
-            <div className="max-w-6xl m-auto flex p-5">
+            <div className="max-w-6xl m-auto mt-28 flex p-5">
                 <div className="flex-1 mr-10">
                     <div>
                         <p className="text-lg font-bold text-primary">Hello! I am Dung Vo Truong — </p>
