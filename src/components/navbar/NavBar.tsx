@@ -24,7 +24,7 @@ export const NavBar = () => {
                         return <NavItem link={item.link} name={item.name} key={i}/>
                     })}
                 </div>
-                <div>Let's talk</div>
+                <div>Let&apos;s talk</div>
             </div>
         </nav>
     );
