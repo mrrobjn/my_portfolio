@@ -15,11 +15,14 @@ type IconLinkProp = {
 type SectionTitleProp = {
     mainTitle: string,
     subTitle: string,
+    color: 'white' | 'primary',
 }
 
 type CareerItemProp = {
     company: string,
     duration: string,
     description: string,
+    logo: string,
+    position: string,
     index: number,
 }

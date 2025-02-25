@@ -3,6 +3,7 @@ import { PageWrapper } from "./common/PageWrapper"
 import { About } from "./about/About"
 import { Experience } from "./experience/Experience"
 import { SectionTitle } from "./common/SectionTitle"
+import { Skill } from "./skill/Skill"
 
 export {
     NavBar,
@@ -10,4 +11,5 @@ export {
     About,
     Experience,
     SectionTitle,
+    Skill,
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "../common/Button";
 
 const navItemArr = [
     {name: 'About', link: '#about'},
@@ -10,21 +11,21 @@ const navItemArr = [
 
 export const NavItem: React.FC<NavItemProp> = (item) => {
   return (
-    <Link className="uppercase mx-5" href={item.link}>{item.name}</Link>
+    <Link className="uppercase mx-5 tracking-[2px]" href={item.link}>{item.name}</Link>
   )
 }
 
 export const NavBar = () => {
     return (
         <nav className="fixed bg-white w-full z-50">
-            <div className="flex justify-between items-center h-[72px] max-w-7xl m-auto px-5">
-                <Link className="font-bold" href="/">My Portfolio</Link>
+            <div className="flex justify-between items-center h-[72px] w-10/12 m-auto px-5">
+                <Link className="font-bold tracking-[2px] uppercase" href="/">My Portfolio</Link>
                 <div>
                     {navItemArr.map((item, i) => {
                         return <NavItem link={item.link} name={item.name} key={i}/>
                     })}
                 </div>
-                <div>Let&apos;s talk</div>
+                <Button>Contact Me</Button>
             </div>
         </nav>
     );
